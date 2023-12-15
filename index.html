@@ -7,7 +7,7 @@
 
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/advanced_ai_robot_icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/advanced_ai_robot_icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -56,15 +56,15 @@
 
 
 
-<!-- 
+
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+          <!-- <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
           <source src="images/nuvo.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nuvo.jpg' width=100%>
+          </video></div> -->
+          <img src='images/vicrop.png' width=100%>
         </div>
         <script type="text/javascript">
           function nuvo_start() {
@@ -78,32 +78,31 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://pratulsrinivasan.github.io/nuvo/">
-          <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+        <a href="https://arxiv.org/pdf/2310.16033.pdf">
+          <span class="papertitle">Visual Cropping Improves Zero-Shot Question Answering of Multimodal Large Language Models</span>
         </a>
         <br>
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <strong>Jiarui Zhang</strong>,
+        <a href="https://scholar.google.com/citations?user=ikhxY4YAAAAJ&hl=en">Mahyar Khayatkhoei</a>,
+        <a href="https://www.prateekchhikara.com/">Prateek Chhikara</a>,
+        <a href="https://www.ilievski.info/">Filip Ilievski</a>
         <br>
         <em>arXiv</em>, 2023
         <br>
-        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        <!-- <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
         /
         <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
-        /
-        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        / -->
+        <a href="https://arxiv.org/pdf/2310.16033.pdf">arXiv</a>
         <p></p>
         <p>
-        Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+          We qualitatively and quantitatively show the limitation of two state-of-the-art multimodal LLMs(MLLMs) in perceiving small visual details for zero-shot visual question answering. Then we found out this is mitigatable by visual cropping following internal attention of MLLM.
         </p>
       </td>
     </tr>
 	
 	
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+    <!-- <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
