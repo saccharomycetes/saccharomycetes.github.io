@@ -74,7 +74,12 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  background-image: url('images/ambition.png'); 
+  background-size: cover; /* This will ensure that your background covers the whole page */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  background-attachment: fixed; /* This will fix the background image during scrolling */
+}
 td,
 th,
 tr,
