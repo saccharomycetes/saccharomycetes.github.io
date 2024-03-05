@@ -77,7 +77,7 @@
                 
                 <h2>Research</h2>
                 <p>
-                  Currently, my focus is on studying the behavior of vision and language models and exploring their capabilities.
+                  Currently, my research focuses on studying multimodal LLMs' (MLLM) properties (response to visual details, bias in object locations, calibration) and capabilities (VQA, nonverbal reasoning). I am also interested in developing new MLLMs by introducig new architecture and tasks.
                   <!-- Representative papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
@@ -86,7 +86,49 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-
+            <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <!-- <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+                  <source src="images/nuvo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div> -->
+                  <img src='images/perceptual_limitation.png' width=180%>
+                </div>
+                <!-- <script type="text/javascript">
+                  function nuvo_start() {
+                    document.getElementById('nuvo_image').style.opacity = "1";
+                  }
+        
+                  function nuvo_stop() {
+                    document.getElementById('nuvo_image').style.opacity = "0";
+                  }
+                  nuvo_stop()
+                </script> -->
+              </td>
+              <td style="padding:120px;width:100%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2402.07384.pdf">
+                  <span class="papertitle">Exploring Perceptual Limitation of Multimodal Large Language Models</span>
+                </a>
+                <br>
+                <strong>Jiarui Zhang*</strong>,
+                <a href="https://jameshujy.github.io/">Jinyi Hu*</a>,
+                <a href="https://mahyarkoy.github.io/">Mahyar Khayatkhoei</a>,
+                <a href="https://www.ilievski.info/">Filip Ilievski</a>,
+                <a href="https://www.cs.tsinghua.edu.cn/csen/info/1180/4033.htm">Maosong Sun</a>
+                <!-- <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+                /
+                <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+                / -->
+                <br>
+                <a href="https://arxiv.org/pdf/2402.07384.pdf">arXiv</a>, 
+                <a href="https://github.com/saccharomycetes/mllm-perceptual-limitation">Github</a>
+                <p></p>
+                <p>
+                  We expose a limitation of several state-of-the-art multimodal LLMs in perceiving small visual objects. Then we identify four factors that influence this limitation, namely, object quality, size, distractor, and location. Through controlled intervention studies, we reveal the distinct impact caused by each factor. Our findings will potentially offer insights to improve visual processing capabilities of MLLMs.
+                </p>
+              </td>
+            </tr>
 
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
