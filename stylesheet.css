@@ -64,54 +64,153 @@
 }
 
 a {
-  color: #1772d0;
+  color: #005ea8;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: #8a3d00;
+  text-decoration: underline;
 }
 
 body {
-  background-image: url('images/ambition.png'); 
-  background-size: cover; /* This will ensure that your background covers the whole page */
-  background-repeat: no-repeat; /* This will prevent the image from repeating */
-  background-attachment: fixed; /* This will fix the background image during scrolling */
+  margin: 0;
+  color: #111827;
+  background: #f4f6f8;
+  line-height: 1.55;
 }
+
+.page {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 18px 45px rgba(31, 45, 61, 0.10);
+  overflow: hidden;
+}
+
+.intro-section {
+  position: relative;
+  isolation: isolate;
+  background-color: #f8fafc;
+  border-bottom: 0;
+  min-height: 330px;
+}
+
+.intro-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("images/Jerry-wide-left.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.92) 34%, rgba(248, 250, 252, 0.56) 58%, rgba(248, 250, 252, 0.16) 80%, rgba(248, 250, 252, 0) 100%),
+    linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.92) 18%, rgba(255, 255, 255, 0.52) 42%, rgba(255, 255, 255, 0) 78%);
+}
+
+.intro-copy {
+  padding-left: 28px !important;
+  padding-top: 36px !important;
+  vertical-align: top !important;
+}
+
+.intro-photo-cell {
+  padding-right: 28px !important;
+  min-height: 330px;
+}
+
+.mobile-photo-fade {
+  display: none;
+}
+
+.research-intro td {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+}
+
+.research-intro p {
+  margin-bottom: 0;
+}
+
+.paper-list {
+  border-spacing: 0 12px !important;
+  padding: 0 18px 12px;
+  box-sizing: border-box;
+}
+
+.paper-list tr {
+  background: #fbfcfe;
+  border: 1px solid #e1e7ef;
+  border-radius: 8px;
+  box-shadow: 0 7px 18px rgba(17, 24, 39, 0.06);
+}
+
+.paper-list td {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.paper-list td:first-child {
+  padding-left: 14px !important;
+}
+
+.paper-list td:last-child {
+  padding-right: 16px !important;
+}
+
+.paper-list img {
+  border-radius: 6px;
+  display: block;
+}
+
+.paper-list tr:first-child td {
+  padding-top: 12px !important;
+}
+
 td,
 th,
 tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 h2 {
-  margin: 0;
-  font-weight: normal;
+  margin: 0 0 8px;
+  font-weight: 700;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .name {
   padding-top: 20px;
-  margin: 0;
+  margin: 0 0 12px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  font-weight: 700;
 }
 
 .one {
@@ -137,4 +236,122 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.award {
+  color: #9b1c1c;
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+}
+
+.hoverZoomLink {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  body {
+    background: #ffffff;
+  }
+
+  .page {
+    margin: 0;
+    border-radius: 0;
+    background: #ffffff;
+  }
+
+  td,
+  th,
+  tr,
+  p,
+  a,
+  strong,
+  .papertitle {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .intro-copy {
+    padding-top: 18px !important;
+    padding-left: 18px !important;
+  }
+
+  .intro-photo-cell {
+    display: none !important;
+  }
+
+  .intro-section {
+    position: static;
+    background: #ffffff;
+    background-color: #f8fafc;
+    min-height: 0;
+  }
+
+  .intro-section::before,
+  .intro-section::after {
+    content: none;
+  }
+
+  .mobile-photo-fade {
+    display: block;
+    height: 252px;
+    margin: -18px -18px -50px;
+    background-image: url("images/Jerry-wide-left.png");
+    background-position: 74% 28%;
+    background-repeat: no-repeat;
+    background-size: auto 292px;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.42) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.42) 60%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .research-intro td {
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+  }
+
+  .paper-list td {
+    padding: 10px 14px !important;
+  }
+
+  .paper-list {
+    padding: 0 18px 10px;
+    border-spacing: 0 12px !important;
+  }
+
+  .paper-list tr {
+    overflow: hidden;
+  }
+
+  .paper-list img {
+    max-height: 190px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  td {
+    padding: 12px 18px !important;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .hoverZoomLink {
+    margin: 0 auto;
+  }
 }
