@@ -355,3 +355,15 @@ img {
     margin: 0 auto;
   }
 }
+
+.job-notice {
+  color: #b42318;
+  font-weight: 700;
+  margin: 18px 0 10px;
+}
+.contact-email {
+  text-align: center;
+  margin: 10px 0 0;
+  overflow-wrap: anywhere;
+}
+.contact-email a { font-weight: 700; }
